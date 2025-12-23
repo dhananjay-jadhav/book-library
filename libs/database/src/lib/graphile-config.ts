@@ -14,7 +14,7 @@ const pgServices = makePgService({
     pubsub: true, // Enable subscriptions
 });
 
-const preset: GraphileConfig.Preset = {
+export const preset: GraphileConfig.Preset = {
     extends: [PostGraphileAmberPreset, PgSimplifyInflectionPreset],
     pgServices: [pgServices],
     grafserv: {
@@ -47,5 +47,3 @@ const preset: GraphileConfig.Preset = {
         sortExport: true,
     },
 };
-
-export default preset;

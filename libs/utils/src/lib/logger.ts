@@ -1,4 +1,5 @@
 import pino, { Logger, LoggerOptions } from 'pino';
+
 import { isDev } from './utils';
 
 export interface AppLoggerOptions {

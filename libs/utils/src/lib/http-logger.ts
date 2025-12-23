@@ -1,4 +1,5 @@
 import pinoHttp, { HttpLogger, Options } from 'pino-http';
+
 import { logger } from './logger';
 
 const httpLoggerOptions: Options = {
