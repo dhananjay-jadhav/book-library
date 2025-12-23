@@ -3,7 +3,13 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
+        "build:api": "nx build api",
         "start:api": "nx serve api",
+        "e2e:api": "nx run api-e2e:e2e",
+        "lint": "nx run-many --target=lint --all --parallel",
+        "all:test": "nx run-many --target=test --all --parallel --passWithNoTests",
+        "all:build": "nx run-many --target=build --all --parallel",
+        "format": "nx format:write",
         "prepare": "husky"
     },
     "private": true,
