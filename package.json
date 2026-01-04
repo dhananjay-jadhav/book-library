@@ -10,6 +10,7 @@
         "all:test": "nx run-many --target=test --all --parallel --passWithNoTests",
         "all:build": "nx run-many --target=build --all --parallel",
         "format": "nx format:write",
+        "gen:gql-types": "graphql-codegen --config codegen.yml",
         "prepare": "husky"
     },
     "private": true,
@@ -28,6 +29,9 @@
     },
     "devDependencies": {
         "@eslint/js": "^9.8.0",
+        "@graphql-codegen/cli": "^6.1.0",
+        "@graphql-codegen/typescript": "^5.0.7",
+        "@graphql-codegen/typescript-operations": "^5.0.7",
         "@nx/docker": "22.3.3",
         "@nx/esbuild": "22.3.3",
         "@nx/eslint": "22.3.3",
